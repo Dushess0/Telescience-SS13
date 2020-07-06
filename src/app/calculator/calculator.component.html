@@ -1,0 +1,56 @@
+<div class="basic-container">
+    <app-point [x_label]="'X1:'" [y_label]="'Y1:'"></app-point>
+    <app-point [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>    
+</div>
+
+
+<span>Power<mat-slide-toggle [(ngModel)]="isElevation">
+    
+</mat-slide-toggle>Elevation</span> 
+
+<div >
+  <ng-template [ngIf]="isElevation" [ngIfElse]="power">
+  
+   <label>Elevation 1
+       <input type="number" [(ngModel)]="Elevation1" /> 
+   </label>
+   <label>Elevation 2
+    <input type="number" [(ngModel)]="Elevation2" /> 
+    </label>
+
+  </ng-template>
+  <ng-template #power>
+    <label>Power 1
+        <input type="number" [(ngModel)]="Power1" /> 
+    </label>
+    <label>Power 2
+     <input type="number" [(ngModel)]="Power2" /> 
+     </label>
+  </ng-template>
+</div>
+
+ 
+<label *ngIf="isElevation">POWER
+    <input type="number"  [(ngModel)]="Power1" /> 
+</label>
+
+
+<label *ngIf="!isElevation">ELEVATION
+    <input type="number" [(ngModel)]="Elevation1" /> 
+</label>
+
+<label>Bearing
+    <input type="number" [(ngModel)]="Bearing" > 
+</label>
+
+<app-point [x_label]="'Start X'" [y_label]="'Start Y'"></app-point>
+
+<button (click)="calculateErrors()">
+    Calculate
+</button>
+
+<div *ngIf="hasResult">
+  <p>Delta Power: {{deltaPower}}</p>
+  <p>Delta Elevation: {{deltaElevation}}</p>
+  <p>Delta Bearing: {{deltaBearing}}</p>
+</div>
