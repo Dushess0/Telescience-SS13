@@ -1,13 +1,11 @@
-<div class="basic-container">
-    <app-point [x_label]="'X1:'" [y_label]="'Y1:'"></app-point>
-    <app-point [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>    
-</div>
-
-
-<span>Power<mat-slide-toggle [(ngModel)]="isElevation">
+<span>Power<mat-slide-toggle [(ngModel)]="isElevation"> 
     
-</mat-slide-toggle>Elevation</span> 
+</mat-slide-toggle>Elevation</span> <br/>
 
+
+<app-point [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"></app-point> <br>
+<app-point [(cords)]="Start" [x_label]="'X1:'" [y_label]="'Y1:'"></app-point> <br/>
+<app-point [(cords)]="End" [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>   
 <div >
   <ng-template [ngIf]="isElevation" [ngIfElse]="power">
   
@@ -20,33 +18,58 @@
 
   </ng-template>
   <ng-template #power>
-    <label>Power 1
-        <input type="number" [(ngModel)]="Power1" /> 
+    <label>Power 1 <select [(ngModel)]="Power1">
+     <option value="5">5</option>
+     <option value="10">10</option>
+     <option value="20">20</option>
+     <option value="25">25</option>
+     <option value="30">30</option>
+     <option value="40">40</option>
+     <option value="50">50</option>
+     <option value="80">80</option>
+     <option value="100">100</option>
+    </select>
     </label>
-    <label>Power 2
-     <input type="number" [(ngModel)]="Power2" /> 
+    <label>Power 2 <select [(ngModel)]="Power2">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+      <option value="80">80</option>
+      <option value="100">100</option>
+     </select>
      </label>
   </ng-template>
 </div>
 
- 
-<label *ngIf="isElevation">POWER
-    <input type="number"  [(ngModel)]="Power1" /> 
-</label>
 
+<label *ngIf="isElevation">POWER<select [(ngModel)]="Power1">
+  <option value="5">5</option>
+  <option value="10">10</option>
+  <option value="20">20</option>
+  <option value="25">25</option>
+  <option value="30">30</option>
+  <option value="40">40</option>
+  <option value="50">50</option>
+  <option value="80">80</option>
+  <option value="100">100</option>
+ </select>
+ </label>
 
 <label *ngIf="!isElevation">ELEVATION
-    <input type="number" [(ngModel)]="Elevation1" /> 
+    <input type="number" [(ngModel)]="Elevation1" />  
 </label>
 
 <label>Bearing
     <input type="number" [(ngModel)]="Bearing" > 
 </label>
 
-<app-point [x_label]="'Start X'" [y_label]="'Start Y'"></app-point>
-
+<br>
 <button (click)="calculateErrors()">
-    Calculate
+    Calculate Errors
 </button>
 
 <div *ngIf="hasResult">

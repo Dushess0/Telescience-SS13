@@ -1,0 +1,23 @@
+<p>Calculate errors or insert them below</p>
+
+
+<label>Power Error
+    <input type="number" [(ngModel)]="deltaPower" /> 
+</label>
+<label>Elevation Error
+    <input type="number" [(ngModel)]="deltaElevation" /> 
+</label>
+<label>Bearing Error
+    <input type="number" [(ngModel)]="deltaBearing" /> 
+</label>
+
+<p>Insert desired X and Y</p> 
+<label>Target X
+    <input type="number" [(ngModel)]="TargetPos.x" /> 
+</label>
+<label>Target Y
+    <input type="number" [(ngModel)]="TargetPos.x" /> 
+</label> <br>
+<button (click)="Triangulate(this.TargetPos,{power:this.deltaPower,bearing:this.deltaBearing,elevation:this.deltaElevation},this.telepad,false)">Triangulate Position</button>
+
+<p> {{targeElevation}} {{targetBearing}} {{targetPower}} </p>

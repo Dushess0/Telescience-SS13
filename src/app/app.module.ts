@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { FormsModule } from "@angular/forms";
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PointComponent } from './point/point.component';
-
+import { TriangulatorComponent } from './triangulator/triangulator.component';
+import { MatFormFieldModule  } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select";
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    PointComponent
+    PointComponent,
+    TriangulatorComponent
   ],
   imports: [
     MatSlideToggleModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,MatFormFieldModule,MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
