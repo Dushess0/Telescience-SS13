@@ -12,46 +12,50 @@ export class TriangulatorComponent implements OnInit {
 
 
 
-  deltaPower:number;
-  deltaBearing:number;
-  deltaElevation:number;
-  telepad = {x:0,y:0};
+  
+  telepad = {x:NaN,y:NaN}; 
 
 
-  targetPower:number;
-  targetBearing:number;
-  targeElevation:number;
+  targetPower:number=NaN;
+  targetBearing:number=NaN;
+  targeElevation:number=NaN;
+  hasResult:Boolean=false;
   
 
-
-  TargetPos: {x:0,y:0};
+  Errors = {power:NaN,bearing:NaN,elevation:NaN}
+  TargetPos= {x:NaN,y:NaN}; 
 
 
   constructor(errorService:ErrorService) { 
 
     errorService.readyToPaste$
       .subscribe(arg => {
-          this.deltaBearing=arg["bearing"];
-          this.deltaPower=arg["power"];
-          this.deltaElevation=arg["elevation"];
+     
+          this.Errors={power:arg["power"],bearing:arg["bearing"],elevation:arg["elevation"]}
+
           this.telepad.x=arg["tele_x"];
           this.telepad.y=arg["tele_y"];
           
+      }
+      );
+      errorService.holopadUpdated$
+      .subscribe(arg => {
+     
+          this.telepad.x=arg[0];
+          this.telepad.y=arg[1];
       }
       );
 
   
   }
 
-
+ 
   Triangulate(target:Record<string,number>,telepad:Record<string,number>,error:Record<string,number>,recurse:Boolean)
   {
-    
-	const POWERS = [5, 10, 20, 25, 30, 40, 50, 80, 100];
 
+	const POWERS = [5, 10, 20, 25, 30, 40, 50, 80, 100];
 	target.x -= telepad.x;
 	target.y -= telepad.y;
-
 	let distance = Math.hypot(target.x, target.y);
 	
 	//calculate minimum power for minimal electricity losses
@@ -79,10 +83,25 @@ export class TriangulatorComponent implements OnInit {
 		}
   }
   
-   this.targeElevation=NaN;
-   this.targetBearing=NaN;
-   this.targetPower=NaN;
+  return {
+		bearing: NaN,
+		elevation: NaN,
+		power: NaN
+	  };
   }
+  BeginTriangulation():void
+  {
+    
+    var target= Object.create(this.TargetPos);
+    
+    var  result= this.Triangulate(target,this.telepad,this.Errors,true);
+    this.targeElevation=result["elevation"];
+    this.targetPower=result["power"];
+    this.targetBearing=result["bearing"];
+    this.hasResult=true;
+
+
+   }
 
 
   visit(target, telepad, error) {

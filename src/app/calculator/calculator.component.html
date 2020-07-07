@@ -3,7 +3,7 @@
 </mat-slide-toggle>Elevation</span> <br/>
 
 
-<app-point [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"></app-point> <br>
+<app-point id="TELEPAD" [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"></app-point> <br>
 <app-point [(cords)]="Start" [x_label]="'X1:'" [y_label]="'Y1:'"></app-point> <br/>
 <app-point [(cords)]="End" [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>   
 <div >
@@ -73,7 +73,7 @@
 </button>
 
 <div *ngIf="hasResult">
-  <p>Delta Power: {{deltaPower}}</p>
-  <p>Delta Elevation: {{deltaElevation}}</p>
-  <p>Delta Bearing: {{deltaBearing}}</p>
+  <p [style.background-color]="deltaBearing>10 ||deltaBearing<10 ? 'transparent' : 'red'" >ΔBearing: {{deltaBearing}}</p> 
+  <p [style.background-color]="deltaElevation>=-25 && deltaElevation<=25 ? 'transparent' : 'red'" >ΔElevation: {{deltaElevation}}</p>
+  <p [style.background-color]="deltaPower>=-4 && deltaPower<=0 ? 'transparent' : 'red'" >ΔPower: {{deltaPower}}</p>
 </div>

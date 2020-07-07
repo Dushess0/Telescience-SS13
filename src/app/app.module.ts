@@ -9,12 +9,14 @@ import { PointComponent } from './point/point.component';
 import { TriangulatorComponent } from './triangulator/triangulator.component';
 import { MatFormFieldModule  } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
+import { MiscComponent } from './misc/misc.component';
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     PointComponent,
-    TriangulatorComponent
+    TriangulatorComponent,
+    MiscComponent
   ],
   imports: [
     MatSlideToggleModule,

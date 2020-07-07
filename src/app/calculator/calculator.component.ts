@@ -13,9 +13,9 @@ export class CalculatorComponent implements OnInit {
 
 
 
-  Start = {x:0,y:0}; 
-  End = {x:0,y:0}; 
-  Telepad = {x:0,y:0}; 
+  Start = {x:NaN,y:NaN}; 
+  End = {x:NaN,y:NaN}; 
+  Telepad = {x:NaN,y:NaN}; 
  
   isElevation:Boolean=false;
   Elevation1:number=45;
@@ -27,16 +27,23 @@ export class CalculatorComponent implements OnInit {
   Bearing:number=0;
   
   hasResult:Boolean=false;
-  public deltaPower:number;
-  public deltaBearing:number;
-  public deltaElevation:number;
+  deltaPower:number;
+  deltaBearing:number;
+  deltaElevation:number;
 
   errorservice :ErrorService;
 
 
   @Output() onCalculated= new EventEmitter<Record<string,number>>();
  
-  constructor(errorservice:ErrorService) { this.errorservice=errorservice; }
+  constructor(errorservice:ErrorService) { this.errorservice=errorservice; this.errorservice.holopadUpdated$.subscribe(arg => {
+     
+    this.Telepad.x=arg[0];
+    this.Telepad.y=arg[1];
+    
+
+}
+); }
 
   ngOnInit(): void {
 
@@ -90,11 +97,19 @@ export class CalculatorComponent implements OnInit {
         this.deltaElevation = -Math.round((2 *  this.Elevation1 - elev1 - elev2) / 2);
       }
     }
-      this.errorservice.ErrorsCalculated({power:this.deltaPower,elevation:this.deltaElevation,bearing:this.deltaBearing, tele_x:this.Telepad.x,tele_y:this.Telepad.y});
+
+
+    this.errorservice.ErrorsCalculated({power:this.deltaPower,elevation:this.deltaElevation,bearing:this.deltaBearing, tele_x:this.Telepad.x,tele_y:this.Telepad.y});
     this.hasResult=true;
   }
   clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
+  }
+
+  loadTelepad(x:number,y:number)
+  {
+    this.Telepad.x=x;
+    this.Telepad.y=y;
   }
 
 }
