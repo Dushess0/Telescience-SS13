@@ -18,8 +18,8 @@
 
 
 <div *ngIf="hasResult">
-  <p>Target Bearing = {{this.targetBearing}} </p> 
-  <p>Target Eleveation = {{this.targeElevation}} </p>
-  <p>Target Power = {{this.targetPower}} </p>
+  <p>Target Bearing = {{this.targetBearing |number }}  </p> 
+  <p>Target Elevation = {{this.targeElevation |number}} </p>
+  <p>Target Power = {{this.targetPower |number}} </p>
 
 </div>  

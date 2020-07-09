@@ -23,5 +23,9 @@ export class MiscComponent implements OnInit {
   
      this.errorSerivce.SetTelepad(x,y);
   }
+  BlindMode()
+  {
+     this.errorSerivce.BlindMode();
+  }
 
 }

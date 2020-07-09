@@ -45,6 +45,14 @@ export class TriangulatorComponent implements OnInit {
           this.telepad.y=arg[1];
       }
       );
+      errorService.blindEvent
+      .subscribe(arg => {
+     
+          this.Errors.bearing=0;
+          this.Errors.elevation=0;
+          this.Errors.power=-2;
+      }
+      );
 
   
   }

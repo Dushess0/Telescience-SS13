@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { ErrorService } from "../error.service";
+import { fromEvent } from 'rxjs';
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
@@ -17,7 +18,7 @@ export class CalculatorComponent implements OnInit {
   End = {x:NaN,y:NaN}; 
   Telepad = {x:NaN,y:NaN}; 
  
-  isElevation:Boolean=false;
+  isElevation:Boolean=true;
   Elevation1:number=45;
   Elevation2:number=50;
 
@@ -32,7 +33,7 @@ export class CalculatorComponent implements OnInit {
   deltaElevation:number;
 
   errorservice :ErrorService;
-
+  
 
   @Output() onCalculated= new EventEmitter<Record<string,number>>();
  
@@ -47,10 +48,10 @@ export class CalculatorComponent implements OnInit {
 
   ngOnInit(): void {
 
-
+    fromEvent(document, 'click').subscribe(() =>this.errorservice.SetTelepad(this.Telepad.x,this.Telepad.y));
   }
  
-   
+
 
   calculateErrors()
   {

@@ -1,11 +1,12 @@
 <span>Power<mat-slide-toggle [(ngModel)]="isElevation"> 
     
 </mat-slide-toggle>Elevation</span> <br/>
+<div>
 
-
-<app-point id="TELEPAD" [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"></app-point> <br>
-<app-point [(cords)]="Start" [x_label]="'X1:'" [y_label]="'Y1:'"></app-point> <br/>
+<app-point  id="TELEPAD" [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"    ></app-point> <br>
+<app-point [(cords)]="Start" [x_label]="'X1:'" [y_label]="'Y1:'"  ></app-point> <br/>
 <app-point [(cords)]="End" [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>   
+</div>
 <div >
   <ng-template [ngIf]="isElevation" [ngIfElse]="power">
   
