@@ -10,6 +10,7 @@ import { TriangulatorComponent } from './triangulator/triangulator.component';
 import { MatFormFieldModule  } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MiscComponent } from './misc/misc.component';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { MiscComponent } from './misc/misc.component';
     MatSlideToggleModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule,MatFormFieldModule,MatSelectModule
+    AppRoutingModule,MatFormFieldModule,MatSelectModule,ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

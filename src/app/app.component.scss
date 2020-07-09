@@ -1,26 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
 
-.container .box {  
+    text-align: left;
+   
+  }
 
-    display:table;  
-}  
-.container .box .box-row {  
-    display:table-row;  
-}  
-.container .box .box-cell {  
-    display:table-cell;  
-    padding:10px;  
-}  
-.container .box .box-cell.box1 {  
-    background:green;  
-    color:white;  
-    text-align:justify;  
-}  
-.container .box .box-cell.box2 {  
-    background:lightgreen;  
-    text-align:justify  
-}  
-.container .box .box-cell.box3 {  
-    background:rgb(110, 0, 184);  
-    color:white;  
-    text-align:justify;  
-} 
+ 
+
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+  
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }

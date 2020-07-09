@@ -1,6 +1,9 @@
-Some tips:<br>
-Cords are written like (x,y,z), where z=layer <br>
-2=station, 1,5=space, 3-4-derelicts, 6-mining outpost<br> <br>
-
 <button (click)="loadTelepad(170,133)">Load NSS Exodus Telepad position</button> <br>
-<button (click)="BlindMode()">BLIND jump!</button>Enters average errors, better than nothing
+<button (click)="BlindMode()">BLIND jump!</button>Enters average errors, better than nothing<br>
+<ul>
+    <li *ngFor="let cord of savedCords"> {{cord.label}}
+         <button [cdkCopyToClipboard]="cord.bearing">Bearing:{{cord.bearing}} </button>        
+         <button [cdkCopyToClipboard]="cord.elevation">Elevation:{{cord.elevation}} </button>        
+         <button [cdkCopyToClipboard]="cord.power">Power:{{cord.power}} </button>        
+    </li>
+</ul>

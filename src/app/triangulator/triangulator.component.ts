@@ -21,13 +21,13 @@ export class TriangulatorComponent implements OnInit {
   targeElevation:number=NaN;
   hasResult:Boolean=false;
   
-
+  errorService:ErrorService;
   Errors = {power:NaN,bearing:NaN,elevation:NaN}
   TargetPos= {x:NaN,y:NaN}; 
 
 
   constructor(errorService:ErrorService) { 
-
+    this.errorService=errorService;
     errorService.readyToPaste$
       .subscribe(arg => {
      
@@ -57,7 +57,11 @@ export class TriangulatorComponent implements OnInit {
   
   }
 
- 
+  SaveCords()
+  {
+    this.errorService.SaveCords({bearing:this.targetBearing,elevation:this.targeElevation,power:this.targetPower});
+  }
+  
   Triangulate(target:Record<string,number>,telepad:Record<string,number>,error:Record<string,number>,recurse:Boolean)
   {
 

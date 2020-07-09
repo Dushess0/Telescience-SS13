@@ -18,8 +18,11 @@
 
 
 <div *ngIf="hasResult">
-  <p>Target Bearing = {{this.targetBearing |number }}  </p> 
-  <p>Target Elevation = {{this.targeElevation |number}} </p>
-  <p>Target Power = {{this.targetPower |number}} </p>
+  <button class="load" [cdkCopyToClipboard]="this.targetBearing.toFixed(2)">Bearing:{{this.targetBearing.toFixed(2)}} </button> 
+  <button class="load" [cdkCopyToClipboard]="this.targeElevation.toFixed(2)">Elevation:{{this.targeElevation.toFixed(2)}} </button> 
+  <button class="load" [cdkCopyToClipboard]="this.targetPower.toFixed(2)">Power:{{this.targetPower.toFixed(2)}} </button> <br>
+ 
+<button class="save" (click)="SaveCords()" >Save Values</button>
+ 
 
 </div>  

@@ -3,13 +3,37 @@ label{
     clear: left;
     width: 70px;
     text-align: left;
+    
 }
 input {
   display: inline-block;
   float: right;
+  
 }
 .target
 {
   position: relative; 
   right:  33px;
+}
+button {
+  transition-duration: 0.4s;
+  background-color: #045af8; /* Green */
+  color: white;
+  border-radius: 6px;
+
+  
+
+}
+.load
+{
+  width: 150px;
+  height: 40px;
+}
+.save
+{
+  background-color: yellowgreen;
+}
+button:hover {
+  background-color: cornflowerblue; /* Green */
+  color: white;
 }
