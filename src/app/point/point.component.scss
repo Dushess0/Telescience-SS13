@@ -1,10 +1,18 @@
 label{
     display: inline-block;
-    clear: left;
-    width: 160px;
+    width: 144px;
     text-align: right;
 }
 input {
   display: inline-block;
   float: right;
+}
+button
+{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+
+  
 }

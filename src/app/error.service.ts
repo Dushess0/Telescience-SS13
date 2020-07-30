@@ -19,8 +19,7 @@ export class ErrorService {
 
   public ErrorsCalculated(res: Record<string,number>)
   {
-    
-      this.errorSource.next(res);
+    this.errorSource.next(res);
   }
 
   public SaveCords(cords:{bearing:number,elevation:number,power:number})
