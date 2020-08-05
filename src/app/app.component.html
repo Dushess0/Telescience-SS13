@@ -1,51 +1,47 @@
-<div class="header">
-  <h2>About telescience</h2>
-  <p>In Space Station 13, telescience is a part of RnD, which purpose is teleporting to derelicts (abandoned labs, space shuttles) and exploring
-       them to find disks with important data or rare equipment. But everyone use it to steal Captain's spare ID or take weapons from weaponry. Remember you will be fired (banned) if you do this! (of course if you are a traitor there is no limits)</p>
-  
-</div>
+<div class="main">
 
-<div class="row">
+
+<div class="app">
   <div class="column" style="background-color:rgb(156, 41, 250); color:rgb(255, 255, 255)">  <app-calculator></app-calculator></div>
   <div class="column" style="background-color:rgb(151, 9, 194); color:rgb(255, 255, 255)"> <app-triangulator></app-triangulator></div>
   <div class="column" style="background-color:rgb(98, 0, 155);color:rgb(255, 255, 255)"> <app-misc></app-misc></div>
 </div>
 
-<div class="footer">
+<div class="hints">
   
-<h3>Ground control to major Tom</h3>
-<p>
-    There are two parts of equipment: <strong>Telescience console</strong>  and <strong>Telepad</strong> . Console used to enter values and open portal and telepad is spawning this portal. Console have next parametres: Bearing, Elevation, Power, Sector. 
-    They are defining a point (x,y,z) in space. Wait but this is 2D game, how it's possible it have 3 dimensions? Well, Z stands for sector or layer, there are 6 sectors, 1 and 5 are empty space, 2 is sector of station, 3 and 4 used for derelicts and 6 for mining outpost. You can view your position by using Global Positioning System (GPS),    Wher round starts you need to link telepad to console, open maintenance panel of telepad with <strong>screwdriver</strong> ,  get data with <strong>multitool</strong>, close panel, upload data from multitool to console.
-    Console needs at least one <strong>bluespace crystal</strong> to open the portal. 
-    Usually there are plenty of them in telescience lab. Take all of them and insert into console. 
-</p>
-<h3>Liftoff</h3>     
-<p><strong>Bluespace crystals</strong> need to be <strong>calibrated</strong> first. 
-  After each callibration crystals change <strong>errors</strong>, you can open portal 10-20 times before next calibration. 
-  You need to find errors to open portal in exact point. There are two approaches to find errors: 
-<strong>Power</strong> and <strong>Elevation</strong>. open wormhole, measure output location using GPS, change one of those parametres (power or elevation) on console then open next wormhole, measure second location. Enter data into calculator and now you have errors, now you can access every location. 
-<h3>Planet Earth is blue and there is nothing I can do</h3>
-<p>Derelicts contains a lot of good stuff, mecha parts, disks with important data, science equipment, hardsuits, scavenge everything. If you are <strong class="robust">ROBUST</strong> you can kill Syndicate commandos and take their space suits and weapons.</p>
-<p>If you are lucky enough you can find alive people (dead or ghost players can join as them)</p>
-<h3>Stars looks very different today</h3>
-<p>Telescience is very dangerous job!</p>
-<ul>
-  <li>Take a weapon! Abandoned labs or stations have a lot of dangers: Syndicate soldiers, hive bots, combat drones, unknown biological forms,laser turrets, <strong class="clown">CLOWNS</strong>. You can take kinetic rifle from Research outpost. Use it to propel yourself in space, it has unlimited ammo and can kill somebody when used wise. </li>
-  <li>Take tools, you need them to make your way to the disk. Crowbar and screwdriver are essential minimum.</li>
-  <li>Take GPS and set tag as your name, it make easier to find your dead body</li>
-  <li>Notify somebody about your intentions, maybe they don't forgot about you</li>
-  <li>Telescience equipment consumes a lot of energy, let the engieneers configure engine and wait until APC will be fully charged.</li> 
-</ul>
-<h3>Can you hear me major Tom?</h3>
-<p>You forgot about something in list above or something bad happened on station. Now you are lost in space. Propably, you have no chance to return back unless you have a friends on station and they didn't forget about you. In this situation you can message them by changing tag on your GPS to something like SOS.</p>
-<p>Your space suit is your last hope, if it get  damaged you are dead!</p>
-<p>Okay, if there is a chance, wait some time around the place where wormhole was. Somebody can open it again.<br>
-The main problem is sector, if you was exploring derelicts your sector is 3 or 4. The station layer is 2 and mining and research outpost is 6. Anyway you need to propel yourself in south-west direction and just float some time in space. Check your GPS when your layer becomes 2 or 6 and then move to the station now.
-<br><strong>Welcome back to the station!</strong>  </p> 
+ <h3>
+   Инструкция для маленьких
+ </h3>
+ <ol>
+   <li>Откройте панель телепада отверткой, используйте мультитул, закройте панель, используйте мультитул на консоль.</li>
+   <li>Вставьте все блюспейс кристалы в консоль.</li>
+   <li>Выставьте Отклонение(Bearing) на 0, Подъем(Elevation) на 45, Силу(Power) на 25, Сектор(Sector) на 5.</li>
+   <li>Откройте воронку.</li>
+   <li>Возьмите два GPS, выставьте теги "GPS1" и "GPS2".</li>
+   <li>Перетащите pull'ом GPS1 в воронку.</li>
+   <li>Закройте воронку, смените Подъем на 50, снова откройте.</li>
+   <li>перетащите GPS2 в воронку.</li>
+   <li>Закрыть воронку.</li>
+   <li>Ввести координаты GPS1 и GPS2 в поля (X1,Y1), (X2,Y2).</li>
+   <li>Ввести позицию телепада (Если вы на Исходе можете нажать специальную кнопку).</li>
+   <li>Вычислить ошибки.</li>
+  <li>Ввести нужные координаты, нажать "вычислить данные", ввести их в консоль, бум и готово!</li>
+ </ol>
+ 
+ 
+ <h3>Особенности калькулятора</h3>
+   
+   <ul>
+     <li>Рядом с полями ввода координат есть кнопки в виде точек, нажмите на них и можете вставлять координаты в виде Telesciece Lab(145,160,2) или Unknown shuttle x=150, y=12, z=unknown
+       <br> Выделяйте строки в GPS или бумаге РД, копируйте и вставляйте.
+     </li>
+     <li>Если ошибки подсвечены красным, значит вы ошиблись в измерениях</li>
+     <li>Если ошибки подсвечены красным и вместо чисел NaN, значит вы забыли ввести координаты телепада или одной из воронок</li>
+     <li>Слепой прыжок, загрузит в поля ошибок средние значения, это может помочь если у вас нету времени на калибровку</li>
+   </ul>
 
+   <h4><a href="https://forum.taucetistation.org/t/telenauka-dlya-malenkih-i-ne-ochen/20515/15">Путеводитель по дереликтам и предложения для улучшения</a></h4>
+</div>
 
 
 </div>
-  
-

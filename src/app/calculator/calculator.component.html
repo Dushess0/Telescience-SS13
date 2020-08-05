@@ -1,25 +1,25 @@
-<span>Power<mat-slide-toggle [(ngModel)]="isElevation"> 
+<span>Сила<mat-slide-toggle [(ngModel)]="isElevation"> 
     
-</mat-slide-toggle>Elevation</span> <br/>
+</mat-slide-toggle>Подъем</span> <br/>
 <div>
 
-<app-point  id="TELEPAD" [(cords)]="Telepad" [x_label]="'Telepad X'" [y_label]="'Telepad Y'"    ></app-point> <br>
+<app-point  id="TELEPAD" [(cords)]="Telepad" [x_label]="'X Телепада'" [y_label]="'Y Телепада'"    ></app-point> <br>
 <app-point [(cords)]="Start" [x_label]="'X1:'" [y_label]="'Y1:'"  ></app-point> <br/>
 <app-point [(cords)]="End" [x_label]="'X2:'" [y_label]="'Y2:'"></app-point>   
 </div>
 <div >
   <ng-template [ngIf]="isElevation" [ngIfElse]="power">
   
-   <label>Elevation 1
+   <label>Подъем 1
        <input type="number" [(ngModel)]="Elevation1" /> 
    </label>
-   <label>Elevation 2
+   <label>Подъем 2
     <input type="number" [(ngModel)]="Elevation2" /> 
     </label>
 
   </ng-template>
   <ng-template #power>
-    <label>Power 1 <select [(ngModel)]="Power1">
+    <label>Сила 1 <select [(ngModel)]="Power1">
      <option value="5">5</option>
      <option value="10">10</option>
      <option value="20">20</option>
@@ -31,7 +31,7 @@
      <option value="100">100</option>
     </select>
     </label>
-    <label>Power 2 <select [(ngModel)]="Power2">
+    <label>Сила 2 <select [(ngModel)]="Power2">
       <option value="5">5</option>
       <option value="10">10</option>
       <option value="20">20</option>
@@ -47,7 +47,7 @@
 </div>
 
 
-<label *ngIf="isElevation">POWER<select [(ngModel)]="Power1">
+<label *ngIf="isElevation">СИЛА<select [(ngModel)]="Power1">
   <option value="5">5</option>
   <option value="10">10</option>
   <option value="20">20</option>
@@ -60,17 +60,17 @@
  </select>
  </label>
 
-<label *ngIf="!isElevation">ELEVATION
+<label *ngIf="!isElevation">Подъем
     <input type="number" [(ngModel)]="Elevation1" />  
 </label>
 
-<label>Bearing
+<label>Отклонение
     <input type="number" [(ngModel)]="Bearing" > 
 </label>
 
 <br>
 <button (click)="calculateErrors()">
-    Calculate Errors
+    Вычислить ошибки
 </button>
 
 <div *ngIf="hasResult">

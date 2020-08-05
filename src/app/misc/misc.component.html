@@ -1,9 +1,9 @@
-<button (click)="loadTelepad(170,133)">Load NSS Exodus Telepad position</button> <br>
-<button (click)="BlindMode()">BLIND jump!</button>Enters average errors, better than nothing<br>
+<button (click)="loadTelepad(170,133)">Загрузить позицию телепада для "Исхода"</button> <br>
+<button (click)="BlindMode()">Слепой прыжок!</button>Ввести средние значения ошибок<br>
 <ul>
     <li *ngFor="let cord of savedCords"> {{cord.label}}
-         <button [cdkCopyToClipboard]="cord.bearing">Bearing:{{cord.bearing}} </button>        
-         <button [cdkCopyToClipboard]="cord.elevation">Elevation:{{cord.elevation}} </button>        
-         <button [cdkCopyToClipboard]="cord.power">Power:{{cord.power}} </button>        
+         <button style="width: 100px;" [cdkCopyToClipboard]="cord.bearing">Отклонение: <br>{{cord.bearing}} </button>        
+         <button style="width: 100px;" [cdkCopyToClipboard]="cord.elevation">Подъем: <br>{{cord.elevation}} </button>        
+         <button style="width: 100px;" [cdkCopyToClipboard]="cord.power">Сила: <br>{{cord.power}} </button>        
     </li>
 </ul>

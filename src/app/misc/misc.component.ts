@@ -16,7 +16,8 @@ export class MiscComponent implements OnInit {
       this.errorSerivce=errorService;
       errorService.saveEvent
       .subscribe(arg => {
-         let label=window.prompt("Enter label","Saved Pos");
+         let label=window.prompt("Введите название","Позиция");
+         if (!label) return;
          this.savedCords.push({label:label,id:this.save_iterator,
           bearing: arg.bearing.toFixed(2),
           elevation: arg.elevation.toFixed(2),
