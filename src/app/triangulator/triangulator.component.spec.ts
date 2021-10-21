@@ -8,9 +8,9 @@ describe('TriangulatorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TriangulatorComponent ]
+      declarations: [TriangulatorComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -24,21 +24,20 @@ describe('TriangulatorComponent', () => {
   });
 
 
-  it('Triangulation (elevation)',()=>
-  {
-    component.Errors={bearing:8,elevation:-38,power:47}
-    component.TargetPos={x:50,y:50}; 
-    component.telepad={x:177,y:30};
+  it('Triangulation (elevation)', () => {
+    component.Errors = { bearing: 8, elevation: -38, power: 47 }
+    component.TargetPos = { x: 50, y: 50 };
+    component.telepad = { x: 177, y: 30 };
 
 
     component.BeginTriangulation();
-    
-    expect(component.targetBearing).toBeCloseTo(272.17,2);
-    expect(component.targeElevation).toBeCloseTo(53.31,2);
-    expect(component.targetPower).toBeCloseTo(5.00,2);
-     
 
-   
+    expect(component.targetBearing).toBeCloseTo(272.17, 2);
+    expect(component.targeElevation).toBeCloseTo(53.31, 2);
+    expect(component.targetPower).toBeCloseTo(5.00, 2);
+
+
+
 
   });
 

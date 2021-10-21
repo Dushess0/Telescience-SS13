@@ -1,29 +1,30 @@
-
-
-.target
-{
-  position: relative; 
-  right:  0px;
+.target {
+  position: relative;
+  right: 0px;
 }
+
 button {
   transition-duration: 0.4s;
-  background-color: #045af8; /* Green */
+  background-color: #045af8;
+  /* Green */
   color: white;
   border-radius: 6px;
 
-  
+
 
 }
-.load
-{
+
+.load {
   width: 150px;
   height: 40px;
 }
-.save
-{
+
+.save {
   background-color: yellowgreen;
 }
+
 button:hover {
-  background-color: cornflowerblue; /* Green */
+  background-color: cornflowerblue;
+  /* Green */
   color: white;
 }

@@ -1,37 +1,41 @@
 <p>Посчитайте ошибки или вставьте значения ниже</p>
 <table class="tg">
-    <tbody>
-      <tr>
-        <td><label>ΔОТКЛОНЕНИЕ</label></td>
-        <td> <input type="number" [(ngModel)]="Errors.bearing" /> </td>
-      </tr>
-      <tr>
-        <td><label>ΔПОДЪЕМ</label></td>
-        <td><input type="number" [(ngModel)]="Errors.elevation" /> </td>
-      </tr>
-      <tr>
-        <td><label>ΔСИЛА</label></td>
-        <td> <input type="number" [(ngModel)]="Errors.power" />  </td>
-      </tr>
-    </tbody>
-    </table>
+  <tbody>
+    <tr>
+      <td><label>ΔОТКЛОНЕНИЕ</label></td>
+      <td> <input type="number" [(ngModel)]="Errors.bearing" /> </td>
+    </tr>
+    <tr>
+      <td><label>ΔПОДЪЕМ</label></td>
+      <td><input type="number" [(ngModel)]="Errors.elevation" /> </td>
+    </tr>
+    <tr>
+      <td><label>ΔСИЛА</label></td>
+      <td> <input type="number" [(ngModel)]="Errors.power" /> </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
 
 
-<p>Введите координаты, куда нужно телепортироваться</p> 
-<div class="target"> 
-<app-point [(cords)]="TargetPos" [x_label]="'X Цели'" [y_label]="'Y Цели'"></app-point> </div><br>
+<p>Введите координаты, куда нужно телепортироваться</p>
+<div class="target">
+  <app-point [(cords)]="TargetPos" [x_label]="'X Цели'" [y_label]="'Y Цели'"></app-point>
+</div><br>
 <button (click)="BeginTriangulation()">Вычислить данные</button>
 
 
 <div *ngIf="hasResult">
-  <button class="load" [cdkCopyToClipboard]="this.targetBearing.toFixed(2)">Отклонение:{{this.targetBearing.toFixed(2)}} </button> 
-  <button class="load" [cdkCopyToClipboard]="this.targeElevation.toFixed(2)">Подъем:{{this.targeElevation.toFixed(2)}} </button> 
-  <button class="load" [cdkCopyToClipboard]="this.targetPower.toFixed(2)">Сила:{{this.targetPower.toFixed(2)}} </button> <br>
- 
-<button class="save" (click)="SaveCords()" >Сохранить данные</button>
- 
+  <button class="load" [cdkCopyToClipboard]="this.targetBearing.toFixed(2)">Отклонение:{{this.targetBearing.toFixed(2)}}
+  </button>
+  <button class="load" [cdkCopyToClipboard]="this.targeElevation.toFixed(2)">Подъем:{{this.targeElevation.toFixed(2)}}
+  </button>
+  <button class="load" [cdkCopyToClipboard]="this.targetPower.toFixed(2)">Сила:{{this.targetPower.toFixed(2)}} </button>
+  <br>
 
-</div>  
+  <button class="save" (click)="SaveCords()">Сохранить данные</button>
+
+
+</div>

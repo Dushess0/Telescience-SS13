@@ -1,29 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from "@angular/forms";
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PointComponent } from './point/point.component';
 import { TriangulatorComponent } from './triangulator/triangulator.component';
-import { MatFormFieldModule  } from "@angular/material/form-field";
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MiscComponent } from './misc/misc.component';
-import {ClipboardModule} from '@angular/cdk/clipboard';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { EmbededMapComponent } from './embeded-map/embeded-map.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     PointComponent,
     TriangulatorComponent,
-    MiscComponent
+    MiscComponent,
+    EmbededMapComponent,
   ],
   imports: [
     MatSlideToggleModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule,MatFormFieldModule,MatSelectModule,ClipboardModule
+    AppRoutingModule, MatFormFieldModule, MatSelectModule, ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
