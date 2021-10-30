@@ -343,7 +343,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_calculator_calculator_component__WEBPACK_IMPORTED_MODULE_1__["CalculatorComponent"], _triangulator_triangulator_component__WEBPACK_IMPORTED_MODULE_2__["TriangulatorComponent"], _misc_misc_component__WEBPACK_IMPORTED_MODULE_3__["MiscComponent"], _embeded_map_embeded_map_component__WEBPACK_IMPORTED_MODULE_4__["EmbededMapComponent"]],
-      styles: ["*[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n}\n\nbody[_ngcontent-%COMP%] {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n\n\n.column[_ngcontent-%COMP%] {\n  padding: 10px;\n  width: 500px;\n  border-radius: 10px;\n}\n\n\n\n@media (max-width: 600px) {\n  .row[_ngcontent-%COMP%] {\n    flex-direction: column;\n  }\n}\n\n.main[_ngcontent-%COMP%] {\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBQTtBQUNGOztBQUVBO0VBQ0UseUNBQUE7QUFDRjs7QUFJQSw0REFBQTs7QUFDQTtFQUNFLGFBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7QUFERjs7QUFRQSx5R0FBQTs7QUFDQTtFQUNFO0lBRUUsc0JBQUE7RUFMRjtBQUNGOztBQVFBO0VBQ0UsYUFBQTtBQU5GIiwiZmlsZSI6ImFwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG59XHJcblxyXG5ib2R5IHtcclxuICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuXHJcblxyXG4vKiBDcmVhdGUgdGhyZWUgZXF1YWwgY29sdW1ucyB0aGF0IHNpdHMgbmV4dCB0byBlYWNoIG90aGVyICovXHJcbi5jb2x1bW4ge1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgd2lkdGg6IDUwMHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcblxyXG5cclxufVxyXG5cclxuXHJcblxyXG4vKiBSZXNwb25zaXZlIGxheW91dCAtIG1ha2VzIHRoZSB0aHJlZSBjb2x1bW5zIHN0YWNrIG9uIHRvcCBvZiBlYWNoIG90aGVyIGluc3RlYWQgb2YgbmV4dCB0byBlYWNoIG90aGVyICovXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gIC5yb3cge1xyXG4gICAgLXdlYmtpdC1mbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB9XHJcbn1cclxuXHJcbi5tYWluIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG5cclxuXHJcbn1cclxuIl19 */"]
+      styles: ["*[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n}\n\nbody[_ngcontent-%COMP%] {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n\n\n.column[_ngcontent-%COMP%] {\n  padding: 10px;\n  width: 500px;\n  border-radius: 10px;\n}\n\n\n\n@media (max-width: 600px) {\n  .row[_ngcontent-%COMP%] {\n    flex-direction: column;\n  }\n}\n\n.main[_ngcontent-%COMP%] {\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQUE7QUFDRjs7QUFFQTtFQUNFLHlDQUFBO0FBQ0Y7O0FBSUEsNERBQUE7O0FBQ0E7RUFDRSxhQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0FBREY7O0FBUUEseUdBQUE7O0FBQ0E7RUFDRTtJQUVFLHNCQUFBO0VBTEY7QUFDRjs7QUFRQTtFQUNFLGFBQUE7QUFORiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gIGZvbnQtZmFtaWx5OiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG5cclxuXHJcbi8qIENyZWF0ZSB0aHJlZSBlcXVhbCBjb2x1bW5zIHRoYXQgc2l0cyBuZXh0IHRvIGVhY2ggb3RoZXIgKi9cclxuLmNvbHVtbiB7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICB3aWR0aDogNTAwcHg7XHJcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuXHJcblxyXG59XHJcblxyXG5cclxuXHJcbi8qIFJlc3BvbnNpdmUgbGF5b3V0IC0gbWFrZXMgdGhlIHRocmVlIGNvbHVtbnMgc3RhY2sgb24gdG9wIG9mIGVhY2ggb3RoZXIgaW5zdGVhZCBvZiBuZXh0IHRvIGVhY2ggb3RoZXIgKi9cclxuQG1lZGlhIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgLnJvdyB7XHJcbiAgICAtd2Via2l0LWZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIH1cclxufVxyXG5cclxuLm1haW4ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcblxyXG5cclxufVxyXG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -1015,7 +1015,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.deltaBearing = -Math.round((2 * this.Bearing - bearing1 - bearing2) / 2); //average
 
           if (this.isElevation) {
-            this.deltaElevation = Math.round(90 / Math.PI * Math.atan((D2 * Math.sin(Math.PI / 90 * this.Elevation1) - D1 * Math.sin(Math.PI / 90 * this.Elevation2)) / ( ///* fix vim highlighting here
+            this.deltaElevation = Math.ceil(90 / Math.PI * Math.atan((D2 * Math.sin(Math.PI / 90 * this.Elevation1) - D1 * Math.sin(Math.PI / 90 * this.Elevation2)) / ( ///* fix vim highlighting here
             D1 * Math.cos(Math.PI / 90 * this.Elevation2) - D2 * Math.cos(Math.PI / 90 * this.Elevation1))));
             var p1 = Math.sqrt(10 * D1 / Math.sin(Math.PI / 90 * (this.Elevation1 + this.deltaElevation)));
             var p2 = Math.sqrt(10 * D2 / Math.sin(Math.PI / 90 * (this.Elevation2 + this.deltaElevation)));
@@ -1054,6 +1054,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.Telepad.x = x;
           this.Telepad.y = y;
         }
+      }, {
+        key: "calculateErrorsv",
+        value: function calculateErrorsv() {}
       }]);
 
       return CalculatorComponent;
@@ -1206,7 +1209,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_3__["MatSlideToggle"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _point_point_component__WEBPACK_IMPORTED_MODULE_5__["PointComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NumberValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_x"]],
-      styles: ["label[_ngcontent-%COMP%] {\n  display: inline-block;\n  clear: left;\n  width: 160px;\n  text-align: right;\n}\n\ninput[_ngcontent-%COMP%] {\n  display: inline-block;\n  float: right;\n}\n\nselect[_ngcontent-%COMP%] {\n  width: 68px;\n}\n\nbutton[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jYWxjdWxhdG9yL2NhbGN1bGF0b3IuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7QUFDSjs7QUFDQTtFQUNFLHFCQUFBO0VBQ0EsWUFBQTtBQUVGOztBQUNBO0VBRUUsV0FBQTtBQUNGOztBQUNBO0VBQ0UseUJBQUE7RUFDQSx5QkFBQTtFQUEyQixVQUFBO0VBQzNCLFlBQUE7RUFDQSxrQkFBQTtBQUdGOztBQUNBO0VBQ0UsZ0NBQUE7RUFBa0MsVUFBQTtFQUNsQyxZQUFBO0FBR0YiLCJmaWxlIjoiYXBwL2NhbGN1bGF0b3IvY2FsY3VsYXRvci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImxhYmVse1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgY2xlYXI6IGxlZnQ7XHJcbiAgICB3aWR0aDogMTYwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxufVxyXG5pbnB1dCB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZsb2F0OiByaWdodDtcclxufVxyXG5cclxuc2VsZWN0XHJcbntcclxuICB3aWR0aDogNjhweDtcclxufVxyXG5idXR0b24ge1xyXG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuNHM7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzA0NWFmODsgLyogR3JlZW4gKi9cclxuICBjb2xvcjogd2hpdGU7XHJcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG5cclxufVxyXG5cclxuYnV0dG9uOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBjb3JuZmxvd2VyYmx1ZTsgLyogR3JlZW4gKi9cclxuICBjb2xvcjogd2hpdGU7XHJcbn0iXX0= */"]
+      styles: ["label[_ngcontent-%COMP%] {\n  display: inline-block;\n  clear: left;\n  width: 160px;\n  text-align: right;\n}\n\ninput[_ngcontent-%COMP%] {\n  display: inline-block;\n  float: right;\n}\n\nselect[_ngcontent-%COMP%] {\n  width: 68px;\n}\n\nbutton[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FsY3VsYXRvci9jYWxjdWxhdG9yLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kscUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0FBQ0o7O0FBQ0E7RUFDRSxxQkFBQTtFQUNBLFlBQUE7QUFFRjs7QUFDQTtFQUVFLFdBQUE7QUFDRjs7QUFDQTtFQUNFLHlCQUFBO0VBQ0EseUJBQUE7RUFBMkIsVUFBQTtFQUMzQixZQUFBO0VBQ0Esa0JBQUE7QUFHRjs7QUFDQTtFQUNFLGdDQUFBO0VBQWtDLFVBQUE7RUFDbEMsWUFBQTtBQUdGIiwiZmlsZSI6InNyYy9hcHAvY2FsY3VsYXRvci9jYWxjdWxhdG9yLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibGFiZWx7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBjbGVhcjogbGVmdDtcclxuICAgIHdpZHRoOiAxNjBweDtcclxuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG59XHJcbmlucHV0IHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgZmxvYXQ6IHJpZ2h0O1xyXG59XHJcblxyXG5zZWxlY3Rcclxue1xyXG4gIHdpZHRoOiA2OHB4O1xyXG59XHJcbmJ1dHRvbiB7XHJcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC40cztcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDQ1YWY4OyAvKiBHcmVlbiAqL1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBib3JkZXItcmFkaXVzOiA2cHg7XHJcblxyXG59XHJcblxyXG5idXR0b246aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlOyAvKiBHcmVlbiAqL1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1303,7 +1306,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "iframe", 0);
         }
       },
-      styles: ["iframe[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 800px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9lbWJlZGVkLW1hcC9lbWJlZGVkLW1hcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVJLFdBQUE7RUFDQSxhQUFBO0FBQUoiLCJmaWxlIjoiYXBwL2VtYmVkZWQtbWFwL2VtYmVkZWQtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaWZyYW1lIFxyXG57XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogODAwcHg7XHJcbn0iXX0= */"]
+      styles: ["iframe[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 800px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZW1iZWRlZC1tYXAvZW1iZWRlZC1tYXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFSSxXQUFBO0VBQ0EsYUFBQTtBQUFKIiwiZmlsZSI6InNyYy9hcHAvZW1iZWRlZC1tYXAvZW1iZWRlZC1tYXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpZnJhbWUgXHJcbntcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA4MDBweDtcclxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1631,7 +1634,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_3__["CdkCopyToClipboard"]],
-      styles: ["button[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n  width: 150px;\n  height: 50px;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9taXNjL21pc2MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx5QkFBQTtFQUNBLHlCQUFBO0VBQTJCLFVBQUE7RUFDM0IsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7QUFFSjs7QUFDQTtFQUNJLGdDQUFBO0VBQWtDLFVBQUE7RUFDbEMsWUFBQTtBQUdKIiwiZmlsZSI6ImFwcC9taXNjL21pc2MuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xyXG4gICAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC40cztcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMwNDVhZjg7IC8qIEdyZWVuICovXHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XHJcbiAgICB3aWR0aDogMTUwcHggO1xyXG4gICAgaGVpZ2h0OiA1MHB4O1xyXG4gIH1cclxuICBcclxuYnV0dG9uOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlOyAvKiBHcmVlbiAqL1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gIH0iXX0= */"]
+      styles: ["button[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n  width: 150px;\n  height: 50px;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzYy9taXNjLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kseUJBQUE7RUFDQSx5QkFBQTtFQUEyQixVQUFBO0VBQzNCLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0FBRUo7O0FBQ0E7RUFDSSxnQ0FBQTtFQUFrQyxVQUFBO0VBQ2xDLFlBQUE7QUFHSiIsImZpbGUiOiJzcmMvYXBwL21pc2MvbWlzYy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImJ1dHRvbiB7XHJcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjRzO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzA0NWFmODsgLyogR3JlZW4gKi9cclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcclxuICAgIHdpZHRoOiAxNTBweCA7XHJcbiAgICBoZWlnaHQ6IDUwcHg7XHJcbiAgfVxyXG4gIFxyXG5idXR0b246aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29ybmZsb3dlcmJsdWU7IC8qIEdyZWVuICovXHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgfSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1811,7 +1814,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["NumberValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgModel"]],
-      styles: ["label[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 144px;\n  text-align: right;\n}\n\ninput[_ngcontent-%COMP%] {\n  display: inline-block;\n  float: right;\n}\n\nbutton[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wb2ludC9wb2ludC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHFCQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0FBQ0o7O0FBQ0E7RUFDRSxxQkFBQTtFQUNBLFlBQUE7QUFFRjs7QUFBQTtFQUVFLHFCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQUVGIiwiZmlsZSI6ImFwcC9wb2ludC9wb2ludC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImxhYmVse1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDE0NHB4O1xyXG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbn1cclxuaW5wdXQge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuYnV0dG9uXHJcbntcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgd2lkdGg6IDE2cHg7XHJcbiAgaGVpZ2h0OiAxNnB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDhweDtcclxuXHJcbiAgXHJcbn0iXX0= */"]
+      styles: ["label[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 144px;\n  text-align: right;\n}\n\ninput[_ngcontent-%COMP%] {\n  display: inline-block;\n  float: right;\n}\n\nbutton[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9pbnQvcG9pbnQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQUNKOztBQUNBO0VBQ0UscUJBQUE7RUFDQSxZQUFBO0FBRUY7O0FBQUE7RUFFRSxxQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFFRiIsImZpbGUiOiJzcmMvYXBwL3BvaW50L3BvaW50LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibGFiZWx7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICB3aWR0aDogMTQ0cHg7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxufVxyXG5pbnB1dCB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZsb2F0OiByaWdodDtcclxufVxyXG5idXR0b25cclxue1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB3aWR0aDogMTZweDtcclxuICBoZWlnaHQ6IDE2cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG5cclxuICBcclxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -2027,74 +2030,68 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }, {
         key: "Triangulate",
-        value: function Triangulate(target, telepad, error, recurse) {
+        value: function Triangulate(target, telepad, error) {
+          var _this6 = this;
+
           var POWERS = [5, 10, 20, 25, 30, 40, 50, 80, 100];
-          target.x -= telepad.x;
-          target.y -= telepad.y;
-          var distance = Math.hypot(target.x, target.y); //calculate minimum power for minimal electricity losses
-
-          for (var _i = 0, _POWERS = POWERS; _i < _POWERS.length; _i++) {
-            var P = _POWERS[_i];
-            var elevation = 90 / Math.PI * Math.asin(10 * distance / Math.pow(P + error.power, 2));
-            var trueElevation = elevation - error.elevation;
-            var invElevation = 90 - elevation - error.elevation;
-            var bearing = 180 / Math.PI * Math.atan2(target.x, target.y) + error.bearing;
-            bearing = bearing < 0 ? bearing + 360 : bearing;
-            var trueGood = trueElevation > 0 && trueElevation < 90;
-            var invGood = invElevation > 0 && invElevation < 90;
-
-            if (!Number.isNaN(elevation) && (trueGood || invGood)) {
-              var hit = {
-                bearing: bearing,
-                elevation: trueGood ? trueElevation : invElevation,
-                power: P
-              };
-              var miss = this.visit(hit, this.telepad, error);
-              if (!recurse) return hit;
-              target.x = target.x + this.telepad.x - (miss.x - target.x - this.telepad.x);
-              target.y = target.y + this.telepad.y - (miss.y - target.y - this.telepad.y);
-              return this.Triangulate(target, this.telepad, error, false);
-            }
-          }
-
-          return {
+          var distance = Math.hypot(target.x - telepad.x, target.y - telepad.y);
+          var bearing = 180.0 * Math.atan2(target.y - telepad.y, target.x - telepad.x) / Math.PI;
+          bearing = parseFloat((90 - bearing).toFixed(2));
+          bearing = bearing < 0 ? bearing + 360 : bearing;
+          var result_bearing = bearing - error.bearing;
+          var num6 = error.elevation < 0 ? 1 : 45;
+          var num7 = error.elevation < 0 ? 45 : 90;
+          var RESULT = {
             bearing: NaN,
             elevation: NaN,
             power: NaN
           };
+          POWERS.forEach(function (power) {
+            var list = new Array();
+            var correctedPower = power + error.power;
+            var found = false;
+
+            for (var i = num6; i <= num7; i += 0.1) {
+              if (_this6.check(bearing, i, correctedPower, target.x - telepad.x, target.y - telepad.y)) {
+                list.push(i);
+                found = true;
+              }
+            }
+
+            if (found) {
+              list.forEach(function (elevation) {
+                var num11 = elevation;
+                num6 += num11;
+              });
+              RESULT.bearing = result_bearing;
+              RESULT.elevation = Math.round(num6) / list.length - error.elevation;
+              RESULT.power = power;
+              return RESULT;
+            }
+          });
+          return RESULT;
         }
       }, {
         key: "BeginTriangulation",
         value: function BeginTriangulation() {
           var target = Object.create(this.TargetPos);
-          var result = this.Triangulate(target, this.telepad, this.Errors, true);
+          var result = this.Triangulate(target, this.telepad, this.Errors);
           this.targeElevation = result["elevation"];
           this.targetPower = result["power"];
           this.targetBearing = result["bearing"];
           this.hasResult = true;
         }
       }, {
-        key: "visit",
-        value: function visit(target, telepad, error) {
-          var rotation = target.bearing + error.bearing;
-          var angle = this.clamp(target.elevation + error.elevation, 1, 90);
-          var power = this.clamp(target.power + error.power, 1, 1000);
-          var distance = 0.1 * Math.pow(power, 2) * Math.sin(angle * Math.PI / 90);
-          var targetX = Math.round(telepad.x + distance * Math.sin(rotation * Math.PI / 180));
-          var targetY = Math.round(telepad.y + distance * Math.cos(rotation * Math.PI / 180));
-          return {
-            x: targetX,
-            y: targetY
-          };
-        }
-      }, {
-        key: "clamp",
-        value: function clamp(value, min, max) {
-          return Math.max(min, Math.min(max, value));
-        }
-      }, {
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "check",
+        value: function check(bearing, elevation, power, x, y) {
+          var num = power * power / 10 * Math.sin(Math.PI * elevation / 90);
+          var possibleX = Math.round(num * Math.sin(Math.PI * bearing / 180));
+          var possibleY = Math.round(num * Math.cos(Math.PI * bearing / 180));
+          return possibleX == x && possibleY == y;
+        }
       }]);
 
       return TriangulatorComponent;
@@ -2260,7 +2257,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["NumberValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], _point_point_component__WEBPACK_IMPORTED_MODULE_3__["PointComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_5__["CdkCopyToClipboard"]],
-      styles: [".target[_ngcontent-%COMP%] {\n  position: relative;\n  right: 0px;\n}\n\nbutton[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n}\n\n.load[_ngcontent-%COMP%] {\n  width: 150px;\n  height: 40px;\n}\n\n.save[_ngcontent-%COMP%] {\n  background-color: yellowgreen;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC90cmlhbmd1bGF0b3IvdHJpYW5ndWxhdG9yLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFDQSxVQUFBO0FBQ0Y7O0FBRUE7RUFDRSx5QkFBQTtFQUNBLHlCQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUtBO0VBQ0UsWUFBQTtFQUNBLFlBQUE7QUFGRjs7QUFLQTtFQUNFLDZCQUFBO0FBRkY7O0FBS0E7RUFDRSxnQ0FBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0FBRkYiLCJmaWxlIjoiYXBwL3RyaWFuZ3VsYXRvci90cmlhbmd1bGF0b3IuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGFyZ2V0IHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgcmlnaHQ6IDBweDtcclxufVxyXG5cclxuYnV0dG9uIHtcclxuICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjRzO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMwNDVhZjg7XHJcbiAgLyogR3JlZW4gKi9cclxuICBjb2xvcjogd2hpdGU7XHJcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG5cclxuXHJcblxyXG59XHJcblxyXG4ubG9hZCB7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG4gIGhlaWdodDogNDBweDtcclxufVxyXG5cclxuLnNhdmUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvd2dyZWVuO1xyXG59XHJcblxyXG5idXR0b246aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlO1xyXG4gIC8qIEdyZWVuICovXHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiJdfQ== */"]
+      styles: [".target[_ngcontent-%COMP%] {\n  position: relative;\n  right: 0px;\n}\n\nbutton[_ngcontent-%COMP%] {\n  transition-duration: 0.4s;\n  background-color: #045af8;\n  \n  color: white;\n  border-radius: 6px;\n}\n\n.load[_ngcontent-%COMP%] {\n  width: 150px;\n  height: 40px;\n}\n\n.save[_ngcontent-%COMP%] {\n  background-color: yellowgreen;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: cornflowerblue;\n  \n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdHJpYW5ndWxhdG9yL3RyaWFuZ3VsYXRvci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0VBQ0EsVUFBQTtBQUNGOztBQUVBO0VBQ0UseUJBQUE7RUFDQSx5QkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFLQTtFQUNFLFlBQUE7RUFDQSxZQUFBO0FBRkY7O0FBS0E7RUFDRSw2QkFBQTtBQUZGOztBQUtBO0VBQ0UsZ0NBQUE7RUFDQSxVQUFBO0VBQ0EsWUFBQTtBQUZGIiwiZmlsZSI6InNyYy9hcHAvdHJpYW5ndWxhdG9yL3RyaWFuZ3VsYXRvci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YXJnZXQge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICByaWdodDogMHB4O1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuNHM7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzA0NWFmODtcclxuICAvKiBHcmVlbiAqL1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBib3JkZXItcmFkaXVzOiA2cHg7XHJcblxyXG5cclxuXHJcbn1cclxuXHJcbi5sb2FkIHtcclxuICB3aWR0aDogMTUwcHg7XHJcbiAgaGVpZ2h0OiA0MHB4O1xyXG59XHJcblxyXG4uc2F2ZSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93Z3JlZW47XHJcbn1cclxuXHJcbmJ1dHRvbjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogY29ybmZsb3dlcmJsdWU7XHJcbiAgLyogR3JlZW4gKi9cclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
 
