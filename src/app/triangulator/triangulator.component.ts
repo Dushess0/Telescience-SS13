@@ -8,11 +8,6 @@ import { ErrorService } from '../error.service';
 })
 export class TriangulatorComponent implements OnInit {
 
-
-
-
-
-
   telepad = { x: NaN, y: NaN };
 
 
@@ -61,49 +56,55 @@ export class TriangulatorComponent implements OnInit {
     this.errorService.SaveCords({ bearing: this.targetBearing, elevation: this.targeElevation, power: this.targetPower });
   }
 
-  Triangulate(target: Record<string, number>, telepad: Record<string, number>, error: Record<string, number>, recurse: Boolean) {
+  Triangulate(target: Record<string, number>, telepad: Record<string, number>, error: Record<string, number>) {
 
     const POWERS = [5, 10, 20, 25, 30, 40, 50, 80, 100];
-    target.x -= telepad.x;
-    target.y -= telepad.y;
-    let distance = Math.hypot(target.x, target.y);
+    let distance = Math.hypot(target.x - telepad.x, target.y - telepad.y);
 
-    //calculate minimum power for minimal electricity losses
-    for (let P of POWERS) {
-      let elevation = 90 / Math.PI * Math.asin(10 * distance / (P + error.power) ** 2);
-      let trueElevation = elevation - error.elevation;
-      let invElevation = 90 - elevation - error.elevation;
-      let bearing = 180 / Math.PI * Math.atan2(target.x, target.y) + error.bearing;
-      bearing = bearing < 0 ? bearing + 360 : bearing;
-      let trueGood = (trueElevation > 0 && trueElevation < 90);
-      let invGood = (invElevation > 0 && invElevation < 90);
-      if (!Number.isNaN(elevation) && (trueGood || invGood)) {
-        let hit = {
-          bearing: bearing,
-          elevation: trueGood ? trueElevation : invElevation,
-          power: P
-        };
-
-        let miss = this.visit(hit, this.telepad, error);
-        if (!recurse)
-          return hit;
-        target.x = (target.x + this.telepad.x) - (miss.x - target.x - this.telepad.x);
-        target.y = (target.y + this.telepad.y) - (miss.y - target.y - this.telepad.y);
-        return this.Triangulate(target, this.telepad, error, false);
-      }
-    }
-
-    return {
+    var bearing = 180.0 * Math.atan2(target.y - telepad.y, target.x - telepad.x) / Math.PI;
+    bearing = parseFloat((90 - bearing).toFixed(2));
+    bearing = bearing < 0 ? bearing+ 360 : bearing;
+    let result_bearing = bearing - error.bearing;
+    let num6 = error.elevation < 0 ? 1 : 45;
+    let num7 = error.elevation < 0 ? 45 : 90;
+    let RESULT= {
       bearing: NaN,
       elevation: NaN,
       power: NaN
-    };
+      
+    }
+    
+    POWERS.forEach(power => {
+      let list: Array<number> = new Array();
+      let correctedPower = power + error.power;
+      let found = false;
+      for (let i = num6; i <= num7; i += 0.1) {
+
+        if (this.check(bearing, i, correctedPower, target.x - telepad.x, target.y - telepad.y)) {
+          list.push(i);
+          found = true;
+        }
+      }
+      if (found) {
+        list.forEach(elevation => {
+          let num11 = elevation;
+          num6 += num11;
+        });
+        RESULT.bearing = result_bearing;
+        RESULT.elevation =  (Math.round(num6) / list.length) - error.elevation
+        RESULT.power = power;
+        return RESULT;
+      }
+    });
+
+
+    return RESULT;
   }
   BeginTriangulation(): void {
 
     var target = Object.create(this.TargetPos);
 
-    var result = this.Triangulate(target, this.telepad, this.Errors, true);
+    var result = this.Triangulate(target, this.telepad, this.Errors);
     this.targeElevation = result["elevation"];
     this.targetPower = result["power"];
     this.targetBearing = result["bearing"];
@@ -112,27 +113,14 @@ export class TriangulatorComponent implements OnInit {
 
   }
 
-
-  visit(target, telepad, error) {
-    let rotation = target.bearing + error.bearing;
-    let angle = this.clamp(target.elevation + error.elevation, 1, 90);
-    let power = this.clamp(target.power + error.power, 1, 1000);
-
-    let distance = 0.1 * power ** 2 * Math.sin(angle * Math.PI / 90)
-
-    let targetX = Math.round(telepad.x + distance * Math.sin(rotation * Math.PI / 180));
-    let targetY = Math.round(telepad.y + distance * Math.cos(rotation * Math.PI / 180));
-
-    return {
-      x: targetX,
-      y: targetY
-    };
-  }
-
-  clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
-  }
   ngOnInit(): void {
+  }
+  check(bearing: number, elevation: number, power: number, x: number, y: number): boolean {
+    let num = power * power / 10 * Math.sin(Math.PI * elevation / 90);
+    let possibleX = Math.round(num * Math.sin(Math.PI * bearing / 180));
+    let possibleY = Math.round(num * Math.cos(Math.PI * bearing / 180));
+
+    return (possibleX == x) && (possibleY == y);
   }
 
 }
